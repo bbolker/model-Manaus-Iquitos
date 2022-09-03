@@ -1,0 +1,519 @@
+2007-07-20  Aaron King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION, NAMESPACE, bsplines.R, sobol.R:
+	changed name of package to pomp.orig
+	this package is now superseded by 'pomp'
+
+2007-06-01  Aaron King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION, plot.R: improved par() handling in plot function
+
+2007-05-25  Aaron King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* Makefile: *** empty log message ***
+
+	* DESCRIPTION, mif-class.Rd, miscmethods.R, pomp-class.Rd:
+	added 'coef<-' and 'time' methods
+	documented these methods
+
+	* NAMESPACE: *** empty log message ***
+
+2007-05-22  Aaron King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION, NAMESPACE, mif-class.Rd, miscmethods.R:
+	added 'coef<-' method for mif
+
+2007-05-17  Aaron King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION, NAMESPACE, generics.Rd, mif-class.Rd, miscmethods.R:
+	replace 'loglik' method with 'logLik'
+
+2007-05-07  Aaron King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* Makefile, DESCRIPTION: *** empty log message ***
+
+	* plot.R: bug fix
+
+	* pomp-class.Rd, mif-class.Rd: document the tol option
+
+	* mif.R: handle the tol option correctly
+	better option handling generally
+
+	* ou1.c: New file.
+
+	* pfilter.R: replace re-dimming with drop=F in subsetting
+	better handling of tol, warn, max.fail options
+	compute effective sample size and report
+	better handling of filtering failures
+
+	* Makefile: *** empty log message ***
+
+	* plot.R: better handling of options
+	labels
+
+	* iid.Rnw: type='l' now is the default in pomp & mif plotting
+
+	* mif.R: replace redimensioning with drop=F in subsetting operations
+	add cond.loglik and eff.sample.size slots to mif object
+
+	* aaa.R: add cond.loglik and eff.sample.size to mif object
+
+2006-12-26  Aaron King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* Makefile, plot.R, DESCRIPTION: *** empty log message ***
+
+	* mif-ex-wrapper.Rnw, mif-example.R, mif-example.Rnw: New file.
+
+2006-12-19  Aaron King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION: *** empty log message ***
+
+	* mif.R: better default argument handling
+
+2006-12-18  Aaron King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* mif.R, pfilter.R: slightly more elegant argument handling
+
+2006-12-17  Aaron King  <kingaa@ilex.biology.lsa.umich.edu>
+
+	* DESCRIPTION: bug fix
+
+	* pfilter.R, mif.R: *** empty log message ***
+
+2006-12-14  Aaron King  <kingaa@ilex.biology.lsa.umich.edu>
+
+	* mif.R: *** empty log message ***
+
+2006-12-12  Aaron King  <kingaa@ilex.biology.lsa.umich.edu>
+
+	* ou2.c: *** empty log message ***
+
+	* Makefile, NAMESPACE, aaa.R, generics.Rd, mif-class.Rd, mif.R, particles.R, pfilter.R, pomp-class.Rd, pomp.R, pomp.Rd, simulate.R:
+	changed from "prior" to "particles"
+
+	* iid.R, iid.Rnw, NAMESPACE, DESCRIPTION: changed to "pomp"
+
+	* mif-class.Rd: *** empty log message ***
+
+	* Makefile, pomp-class.Rd, pomp.R, pomp.Rd, pomp.h: changed to "pomp"
+
+	* generics.Rd: New file.
+
+	* particles.R, pfilter.R, plot.R, print.R, resample.c, simulate.R, sobol.R, aaa.R, bspline.c, bsplines.R, cqlf.R, cqlf.cc, mif-class.Rd, mif.R:
+	change to "pomp"
+
+2006-12-10  Aaron King  <kingaa@ilex.biology.lsa.umich.edu>
+
+	* ou2.c, Makefile, iid.Rnw, mif.R, NAMESPACE, print.R:
+	*** empty log message ***
+
+	* ou2.c: New file.
+
+2006-10-06  Aaron King  <kingaa@ilex.biology.lsa.umich.edu>
+
+	* DESCRIPTION, simulate.R: bug fix
+
+2006-10-05  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION: *** empty log message ***
+
+	* ssmd.Rd: typos corrected
+
+	* mif.R: handle the case where length(pars)==1
+
+	* pfilter.R: better error handling
+
+2006-09-19  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION, iid.Rnw, simulate.R, ssmd-class.Rd, ssmd.Rd: bug fix
+
+	* DESCRIPTION, iid.Rnw, mif-class.Rd, miscmethods.R, simulate.R, ssmd.Rd, mif.R, pfilter.R, prior.R:
+	*** empty log message ***
+
+	* plot.R: bug fix
+
+	* iid.Rnw: *** empty log message ***
+
+	* aaa.R: rename coefficients slot "coef"
+
+2006-09-10  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION: *** empty log message ***
+
+	* iid.Rnw, cqlf.Rd, mif-class.Rd, ssmd-class.Rd, ssmd.Rd:
+	multivariate extension
+
+	* aaa.R, cqlf.R, mif.R, miscmethods.R, pfilter.R, plot.R, print.R, prior.R, simulate.R, ssmd.R:
+	extended to deal with multivariate data
+	slot names changed for ssmd and mif objects
+	algorithm parameters are now handled as a list
+
+2006-09-06  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* iid.Rnw: runs faster
+
+	* pfilter.R: better error handling
+
+2006-08-17  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* DESCRIPTION, mif.R, print.R: bug fix
+
+2006-08-15  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* miscmethods.R: bug fix
+
+	* DESCRIPTION: *** empty log message ***
+
+	* mif-class.Rd, ssmd-class.Rd: better
+
+	* pfilter.R: now return prediction means only for state variables
+	return prediction variances for stvs, pars, & ivps
+	return filter means for stvs, pars, & ivps
+
+	* DESCRIPTION: *** empty log message ***
+
+	* mif.R: more careful handling of arguments
+
+	* pfilter.R: removed option for means & variances from user pfilter
+	got rid of extraneous "..." arguments
+
+	* mif-class.Rd, ssmd-class.Rd: New file.
+
+	* ssmd.Rd: better documentation
+
+	* iid.Rnw: *** empty log message ***
+
+	* miscmethods.R: small improvements
+
+	* print.R: remove extraneous ...
+
+	* prior.R: *** empty log message ***
+
+	* plot.R: removed prediction-variance plots from the plot method
+
+	* Makefile, iid.Rnw: *** empty log message ***
+
+	* iid-example.Rnw: New file.
+
+	* simulate.R, cqlf.Rd: *** empty log message ***
+
+2006-08-11  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION: *** empty log message ***
+
+	* pfilter.R, pfilter.Rd:
+	now return conditional loglikelihoods at each time-point
+
+2006-08-08  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION: *** empty log message ***
+
+	* print.R: small change to mif print
+
+2006-08-03  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION: *** empty log message ***
+
+	* conv.rec.Rd, miscmethods.R: bug fix in conv.rec method
+
+2006-08-02  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* iid.Rnw, print.R, print.Rd: *** empty log message ***
+
+	* NAMESPACE: summary -> print
+
+	* Makefile: *** empty log message ***
+
+	* print.R, print.Rd: New file.
+
+	* pfilter.R, pfilter.Rd:
+	can extract prediction means & variances, filter means using pfilter now
+
+	* NAMESPACE, DESCRIPTION, iid.Rnw: *** empty log message ***
+
+	* predvarplot.Rd: changed the names
+
+	* plot.R: changes to plot.mif
+	new predvarplot
+
+	* Makefile: *** empty log message ***
+
+	* mif.R: can give sigma = 0
+
+2006-07-31  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* prior.R: allow for sigma=0 (scalar)
+
+	* prior.Rd, simulate.R: *** empty log message ***
+
+2006-07-30  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION: *** empty log message ***
+
+	* simulate.R, simulate.Rd: extended simulate functionality
+
+2006-07-28  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION, miscmethods.R: bug fix
+
+	* Makefile: *** empty log message ***
+
+	* miscmethods.R: many more auxiliary methods
+
+	* NAMESPACE: *** empty log message ***
+
+	* DESCRIPTION: some more functionality
+	no algorithm changes
+
+	* CC.diagn.Rd, conv.rec.Rd, filter.mean.Rd, pred.mean.Rd, pred.var.Rd:
+	New file.
+
+	* plot.R: added CC diagnostic plots
+
+	* loglik.Rd: *** empty log message ***
+
+2006-07-27  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* pfilter.R, pfilter.Rd: better filtering for mif objects
+
+2006-07-26  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* mif.R: bug fix
+
+	* iid.Rnw: more iterations to converge
+
+	* DESCRIPTION: *** empty log message ***
+
+	* iid.Rnw, mif.Rd: back to the exponential cooling schedule
+
+	* mif.R: back to the exponential cooling schedule
+	better error handling
+
+	* DESCRIPTION: *** empty log message ***
+
+	* pfilter.R, prior.R, simulate.R: better error handling
+
+2006-07-23  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* simulate.Rd: *** empty log message ***
+
+2006-07-21  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* iid.Rnw: *** empty log message ***
+
+	* randwalk.R, randwalk.Rnw: New file.
+
+	* iid.Rnw, Makefile: *** empty log message ***
+
+	* mif.Rd, mifObject.Rd, pfilter.Rd, prior.Rd, simulate.Rd, ssmdObject.Rd:
+	move the examples to the vignettes
+
+	* Makefile: *** empty log message ***
+
+	* iid.R: New file.
+
+	* continue.Rd, mif.Rd, mifObject.Rd, savgol.Rd: fixed some links
+
+	* mifObject.Rd: "maple" -> "mif"
+
+	* DESCRIPTION: changed "maple" to "mif"
+
+	* Makefile: "maple" -> "mif"
+
+	* NAMESPACE, iid.Rnw: "maple -> "mif"
+
+	* pfilter.Rd, plot.Rd, prior.Rd, simulate.Rd, ssmd.Rd, ssmdObject.Rd, coef.Rd, continue.Rd, cqlf.Rd, loglik.Rd, mif.Rd, aaa.R, coef.R, loglik.R, mif.R, pfilter.R, plot.R, prior.R, simulate.R:
+	"maple" -> "mif"
+
+	* savgol.Rd, sobol.Rd, bsplines.Rd, DESCRIPTION, iid.Rnw:
+	*** empty log message ***
+
+	* plot.R: a briefer set of plots
+
+	* mif.R, mif.Rd, continue.Rd, aaa.R: new cooling schedule
+
+2006-07-12  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* maple.R: CC -> CC^2
+
+2006-06-22  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* pfilter-methods.Rd: improved user interface for ssmd objects
+
+	* pfilter.R: improved user interface to pfilter.ssmd
+
+	* DESCRIPTION: improved user interface to pfilter
+
+	* maple.R: better continue
+
+2006-06-21  Aaron A. King  <kingaa@ulmus.biology.lsa.umich.edu>
+
+	* cholmodel.R: *** empty log message ***
+
+	* DESCRIPTION: bug fix
+
+	* maple.R: *** empty log message ***
+
+	* maple.R: fixed continue bug.
+
+	* pfilter.R: *** empty log message ***
+
+2006-06-20  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* DESCRIPTION, Makefile, maple.R, cholmodel.c, pfilter.R, prior.R:
+	*** empty log message ***
+
+2006-06-19  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* DESCRIPTION, Makefile: *** empty log message ***
+
+	* maple.R: revert to exponential cooling
+	put continue code here
+
+2006-06-17  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* simulate-methods.Rd, simulate.R: new user interface for simulate
+
+	* continue.R: fixed the misalignment bug
+
+	* DESCRIPTION, Makefile: *** empty log message ***
+
+	* iid.Rnw: New file.
+
+	* DESCRIPTION: *** empty log message ***
+
+	* continue.R: fixed conv.rec misalignment bug
+
+	* maple.R: *** empty log message ***
+
+2006-06-16  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* Makefile: *** empty log message ***
+
+	* resample.c: removed unused variable
+
+	* Makefile, DESCRIPTION: *** empty log message ***
+
+	* plot.R: if device is interactive, set ask=T
+	else leave it alone
+	return device to its previous state when done
+
+	* prior.R: named arguments in rprior are now assumed
+
+	* pfilter.R: named arguments in rprocess and dmeasure are now assumed
+
+	* simulate.R: named arguments X, t1, t2 are now assumed
+
+	* continue-methods.Rd, maple-methods.Rd, prior-methods.Rd, ssmd.Rd:
+	improved documentation
+
+	* maple.R, continue.R: new cooling schedule
+
+	* cholmodel.R: deleted sirs.cases (for now)
+
+	* cholmodel.R: moved many functions to dacca.R
+
+	* cholmodel.c: added normal measurement model
+
+	* dacca.R: *** empty log message ***
+
+	* cholmodel.R, cholmodel.c, dacca.R: fixed up beta.trend
+
+2006-06-15  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* DESCRIPTION: *** empty log message ***
+
+	* continue.R, maple.R: change format of conv.rec
+
+2006-06-14  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* pfilter-methods.Rd: fixed example & documentation
+
+	* plot.R: add filtering-mean plots to plot.maple
+
+	* DESCRIPTION: *** empty log message ***
+
+	* plot-methods.Rd: add filtering-mean plots to plot.maple
+
+	* DESCRIPTION: *** empty log message ***
+
+	* continue.R: bug fix
+
+2006-06-13  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* cholmodel.R: *** empty log message ***
+
+2006-06-12  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* maple-methods.Rd, DESCRIPTION, maple.R, cqlf.R, ssmd.R, ssmd.Rd, aaa.R, continue.R, pfilter.R:
+	*** empty log message ***
+
+	* simulate.R, simulate-methods.Rd: changed order of arguments
+
+	* london.R, sirmodel.R, sirmodel.c: New file.
+
+2006-06-06  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* DESCRIPTION, plot.R, Makefile: *** empty log message ***
+
+	* coef-methods.Rd, continue-methods.Rd, loglik-methods.Rd, maple-methods.Rd, pfilter-methods.Rd, plot-methods.Rd, prior-methods.Rd, simulate-methods.Rd, ssmd.package.Rd:
+	better documentation (?)
+
+	* cholmodel.R, cholmodel.c, dacca.R: lognormal measurement error
+
+2006-06-05  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* continue-methods.Rd, loglik-methods.Rd, plot-methods.Rd, coef-methods.Rd:
+	*** empty log message ***
+
+	* dacca.R, cholmodel.R, cholmodel.c:
+	last version before change to lognormal measurement error
+
+2006-06-01  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* coef-methods.Rd, continue-methods.Rd, loglik-methods.Rd, maple-methods.Rd, pfilter-methods.Rd, plot-methods.Rd, prior-methods.Rd, simulate-methods.Rd, Makefile, DESCRIPTION, coef.R:
+	*** empty log message ***
+
+	* coef.R: New file.
+
+	* plot.R, dacca.R, cholmodel.R, cholmodel.c: *** empty log message ***
+
+2006-05-29  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* continue.R: *** empty log message ***
+
+2006-05-28  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* Makefile, NAMESPACE, plot.R, DESCRIPTION, maple-methods.Rd, mapleObject.Rd, ssmdObject.Rd, prior-methods.Rd, ssmd.Rd, ssmd.R, pfilter-methods.Rd, pfilter.R, maple.R:
+	*** empty log message ***
+
+2006-05-27  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* continue-methods.Rd: *** empty log message ***
+
+	* continue-methods.Rd, continue.R: New file.
+
+2006-05-25  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* DESCRIPTION: *** empty log message ***
+
+2006-05-24  Aaron A. King  <kingaa@alnus.biology.lsa.umich.edu>
+
+	* cholmodel.R, cholmodel.c, simulate.R, maple.R, DESCRIPTION, aaa.R, pfilter.R, dacca.R, loglik.R, Makefile, NAMESPACE, ssmd.h, sobol.R, cqlf.Rd, cqlf.R, cqlf.cc:
+	*** empty log message ***
+
+2006-05-23  Aaron A. King  <kingaa@quercus.biology.lsa.umich.edu>
+
+	* GPL, Makefile, DESCRIPTION, NAMESPACE, bspline.c, resample.c, ssmd.h, bsplines.Rd, coef-methods.Rd, loglik-methods.Rd, maple-methods.Rd, mapleObject.Rd, philter-methods.Rd, plot-methods.Rd, prior-methods.Rd, simulate-methods.Rd, ssmd.Rd, ssmd.package.Rd, ssmdObject.Rd, ssmd.R:
+	New file.
+
+	* maple.R: *** empty log message ***
+
+	* aaa.R, bsplines.R, loglik.R, philter.R, plot.R, prior.R, simulate.R, zzz.R:
+	New file.
+
+	* cholmodel.R, dacca.R: using ssmd package
+
+	* cholmodel.c: moved splines to ssmd package
+
+	* dacca.R, cholmodel.R, maple.R, cholmodel.c, maple.c: New file.

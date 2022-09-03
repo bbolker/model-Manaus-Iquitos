@@ -1,0 +1,13 @@
+\documentclass[letterpaper]{article}
+%\VignetteIndexEntry{Introduction to pomp: simple examples}
+
+\usepackage{hyperref}
+\usepackage{pdfpages}
+
+\title{Introduction to \texttt{pomp}: simple examples}
+\author{A. A. King, University of Michigan}
+
+\begin{document}
+\includepdf[fitpaper=true,pages=-]{mif-example.pdf}
+
+\end{document}
